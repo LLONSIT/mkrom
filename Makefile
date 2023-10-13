@@ -1,6 +1,6 @@
 all:
 	mips-linux-gnu-gcc -c *.c *.s
-	mips-linux-gnu-gcc *.o -o main -L ~/ubuntu/libelf/libelf-0.8.13/lib -lelf
+	mips-linux-gnu-gcc *.o -o main -L ~/ubuntu/libelf/libelf-0.8.13/lib -lelf -o Makerom
 
 clean:
-	rm *.o
+	rm *.o Makerom
